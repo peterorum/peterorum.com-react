@@ -81,9 +81,8 @@ module.exports = {
   settings: {
     'import/resolver': {
       webpack: {
-        config: './internals/webpack/webpack.prod.babel.js',
+        config: './webpack.config.js',
       },
     },
-    polyfills: ['fetch', 'promises'],
   },
 };
