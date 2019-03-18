@@ -2,10 +2,8 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-const StyledFooter = styled.footer`
+const Wrapper = styled.footer`
   text-align: center;
 `;
 
-export const Footer = () => (
-  <StyledFooter>Footer</StyledFooter>
-);
+export const Footer = () => <Wrapper>Footer</Wrapper>;
