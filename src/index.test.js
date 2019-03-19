@@ -13,6 +13,5 @@ describe('<App />', () => {
     const { getByText } = render(<App />);
 
     expect(getByText('Header')).toBeInTheDocument();
-
   });
 });
