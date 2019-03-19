@@ -10,8 +10,9 @@ afterEach(cleanup);
 
 describe('<App />', () => {
   it('should render App', () => {
-    const { debug } = render(<App />);
+    const { getByText } = render(<App />);
 
-    debug();
+    expect(getByText('Header')).toBeInTheDocument();
+
   });
 });
