@@ -1,7 +1,5 @@
 import React from 'react';
 
-import styled from 'styled-components';
-
 import 'sanitize.css';
 
 import { Header } from 'Components/header/header';
@@ -11,26 +9,16 @@ import { Painter } from 'Components/painter/painter';
 import { Links } from 'Components/links/links';
 import { Footer } from 'Components/footer/footer';
 
-const Container = styled.div`
-  max-width: 1100px;
-  margin: 0 auto;
-`;
+import GlobalStyle from '../../global-styles';
 
 const App = () => (
   <>
+    <GlobalStyle />
     <Header />
-    <Container>
-      <Photographer />
-    </Container>
-    <Container>
-      <Functal />
-    </Container>
-    <Container>
-      <Painter />
-    </Container>
-    <Container>
-      <Links />
-    </Container>
+    <Photographer />
+    <Functal />
+    <Painter />
+    <Links />
     <Footer />
   </>
 );
