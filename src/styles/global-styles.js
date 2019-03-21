@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
@@ -9,7 +9,4 @@ const GlobalStyle = createGlobalStyle`
       text-decoration: underline;
     }
   }
-
 `;
-
-export default GlobalStyle;

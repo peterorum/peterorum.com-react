@@ -9,7 +9,7 @@ import { Painter } from 'Components/painter/painter';
 import { Links } from 'Components/links/links';
 import { Footer } from 'Components/footer/footer';
 
-import GlobalStyle from '../../global-styles';
+import { GlobalStyle } from 'Styles/global-styles';
 
 const App = () => (
   <>

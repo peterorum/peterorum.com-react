@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 
 import styled from 'styled-components';
 
+import { Container } from 'Components/layout/layout';
+import { colors } from 'Styles/colors';
+
 import img1 from 'Images/PETE0002-1.jpg';
 import img2 from 'Images/PETE0196 as Smart Object-1.jpg';
 import img3 from 'Images/PO000058-as-Smart-Object-1.jpg';
@@ -16,22 +19,37 @@ const Wrapper = styled.section`
   height: 100%;
 
   .photo {
-    /* position: absolute; */
+    position: absolute;
+    z-index: 10;
 
     & img {
       position: absolute;
+      background-color: black;
       top: 0;
       left: 0;
       width: 100vw;
       height: 100vh;
-      object-fit: cover;
+      object-fit: contain;
       opacity: 0;
       transition: opacity 1000ms;
 
       &.active {
         opacity: 1;
       }
+
+      @media (min-width: 768px) {
+        object-fit: cover;
+      }
     }
+  }
+
+  .content {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: ${colors.primary};
   }
 `;
 
@@ -51,13 +69,18 @@ export const Photographer = () => {
       <div className="photo">
         {images.map((image, index) => (
           <img
+            key={image}
             src={image}
             alt=""
             className={index === currentImage ? 'active' : ''}
           />
         ))}
       </div>
-      Photographer2
+      <div className="content">
+        <Container>
+          <h2>Photographer</h2>
+        </Container>
+      </div>
     </Wrapper>
   );
 };
