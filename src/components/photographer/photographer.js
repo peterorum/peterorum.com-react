@@ -50,6 +50,26 @@ const Wrapper = styled.section`
     left: 0;
     width: 100%;
     color: ${colors.primary};
+
+    & .layout {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    a {
+      color: ${colors.primary};
+    }
+
+    .links {
+      padding-top: 1rem;
+      font-size: 1.4rem;
+      text-align: right;
+
+      & > div {
+        margin-bottom: 1rem;
+      }
+    }
   }
 `;
 
@@ -78,7 +98,30 @@ export const Photographer = () => {
       </div>
       <div className="content">
         <Container>
-          <h2>Photographer</h2>
+          <div className="layout">
+            <div>
+              <h2>Photographer</h2>
+            </div>
+            <div className="links">
+              <div>
+                <a href="http://street.pics">street.pics</a>
+              </div>
+              <div>
+                <a href="https://instagram.com/peterorum">instagram</a>
+              </div>
+              <div>
+                <a href="https://www.facebook.com/peterorumphotography">
+                  facebook
+                </a>
+              </div>
+              <div>
+                <a href="https://www.flickr.com/photos/petero2">flickr</a>
+              </div>
+              <div>
+                <a href="http://au.blurb.com/user/petero2">books</a>
+              </div>
+            </div>
+          </div>
         </Container>
       </div>
     </Wrapper>

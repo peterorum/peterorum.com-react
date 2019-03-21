@@ -9,4 +9,8 @@ export const GlobalStyle = createGlobalStyle`
       text-decoration: underline;
     }
   }
+
+  h2 {
+    font-family: 'Julius Sans One';
+  }
 `;
