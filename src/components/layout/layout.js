@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const breakpoints = {
-  mobile: '768px'
-}
+  mobile: '768px',
+};
 
 export const Container = styled.div`
   max-width: 1170px;

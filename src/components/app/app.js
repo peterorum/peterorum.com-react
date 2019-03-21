@@ -4,6 +4,7 @@ import 'sanitize.css';
 
 import { Header } from 'Components/header/header';
 import { Photographer } from 'Components/photographer/photographer';
+import { Programmer } from 'Components/programmer/programmer';
 import { Functal } from 'Components/functal/functal';
 import { Painter } from 'Components/painter/painter';
 import { Links } from 'Components/links/links';
@@ -16,6 +17,7 @@ const App = () => (
     <GlobalStyle />
     <Header />
     <Photographer />
+    <Programmer />
     <Functal />
     <Painter />
     <Links />
