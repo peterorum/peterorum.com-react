@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import styled from 'styled-components';
 
-import { Container } from 'Components/layout/layout';
+import { Container, breakpoints } from 'Components/layout/layout';
 import { colors } from 'Styles/colors';
 
 import img1 from 'Images/PETE0002-1.jpg';
@@ -15,8 +15,8 @@ const images = [img1, img2, img3, img4, img5];
 
 const Wrapper = styled.section`
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 
   .photo {
     position: absolute;
@@ -37,7 +37,7 @@ const Wrapper = styled.section`
         opacity: 1;
       }
 
-      @media (min-width: 768px) {
+      @media (min-width: ${breakpoints.mobile}) {
         object-fit: cover;
       }
     }
@@ -63,11 +63,20 @@ const Wrapper = styled.section`
 
     .links {
       padding-top: 1rem;
-      font-size: 1.4rem;
+      font-size: 1rem;
       text-align: right;
 
       & > div {
         margin-bottom: 1rem;
+
+        svg {
+          display: inline-block;
+          margin-left: 1rem;
+        }
+      }
+
+      @media (min-width: ${breakpoints.mobile}) {
+        font-size: 1.4rem;
       }
     }
   }
@@ -105,20 +114,25 @@ export const Photographer = () => {
             <div className="links">
               <div>
                 <a href="http://street.pics">street.pics</a>
+                <i className="fab fa-tumblr-square" />
               </div>
               <div>
                 <a href="https://instagram.com/peterorum">instagram</a>
+                <i className="fab fa-instagram" />
               </div>
               <div>
                 <a href="https://www.facebook.com/peterorumphotography">
                   facebook
+                  <i className="fab fa-facebook" />
                 </a>
               </div>
               <div>
                 <a href="https://www.flickr.com/photos/petero2">flickr</a>
+                <i className="fab fa-flickr" />
               </div>
               <div>
                 <a href="http://au.blurb.com/user/petero2">books</a>
+                <i className="fas fa-book" />
               </div>
             </div>
           </div>
