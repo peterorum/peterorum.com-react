@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import { Container, breakpoints } from 'Components/layout/layout';
 
-import painting from 'Images/Gala Vale.jpg';
+import painting from 'Images/Gala-Vale.jpg';
 import drawing from 'Images/pjo-paint-3.jpg';
 
 const Wrapper = styled.section`

@@ -6,7 +6,7 @@ import { Container, breakpoints } from 'Components/layout/layout';
 import { colors } from 'Styles/colors';
 
 import img1 from 'Images/PETE0002-1.jpg';
-import img2 from 'Images/PETE0196 as Smart Object-1.jpg';
+import img2 from 'Images/PETE0196-as-Smart-Object-1.jpg';
 import img3 from 'Images/PO000058-as-Smart-Object-1.jpg';
 import img4 from 'Images/PO000359-3.jpg';
 import img5 from 'Images/PO006781-as-Smart-Object-1.jpg';
