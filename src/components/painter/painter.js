@@ -9,6 +9,7 @@ import drawing from 'Images/pjo-paint-3.jpg';
 
 const Wrapper = styled.section`
   padding: 2rem;
+  padding-top: 4rem;
 
   img {
     max-width: 100%;
@@ -49,26 +50,24 @@ const Wrapper = styled.section`
 `;
 
 export const Painter = () => (
-  <Wrapper>
-    <div id="painter">
-      <Container>
-        <div className="content">
-          <div className="painting">
-            <img src={painting} alt="painting" />
-          </div>
-          <div className="drawing">
-            <h2>Painter</h2>
-            <p>
-              <a href="https://www.facebook.com/peterorumart/">
-                <h3>
-                  <i className="fab fa-facebook" /> Facebook Page
-                </h3>
-              </a>
-            </p>
-            <img src={drawing} alt="drawing" />
-          </div>
+  <Wrapper id="painter">
+    <Container>
+      <div className="content">
+        <div className="painting">
+          <img src={painting} alt="painting" />
         </div>
-      </Container>
-    </div>
+        <div className="drawing">
+          <h2>Painter</h2>
+          <p>
+            <a href="https://www.facebook.com/peterorumart/">
+              <h3>
+                <i className="fab fa-facebook" /> Facebook Page
+              </h3>
+            </a>
+          </p>
+          <img src={drawing} alt="drawing" />
+        </div>
+      </div>
+    </Container>
   </Wrapper>
 );

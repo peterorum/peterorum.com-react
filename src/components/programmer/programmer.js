@@ -6,7 +6,9 @@ import { Container } from 'Components/layout/layout';
 
 import { Cards, Card } from 'Components/cards/cards';
 
-const Wrapper = styled.section``;
+const Wrapper = styled.section`
+  padding-top: 3rem;
+`;
 
 const cards = [
   {
@@ -72,8 +74,8 @@ const cards = [
 ];
 
 export const Programmer = () => (
-  <Wrapper>
-    <div className="content" id="programmer">
+  <Wrapper id="programmer">
+    <div className="content">
       <Container>
         <div>
           <h2>Programmer</h2>

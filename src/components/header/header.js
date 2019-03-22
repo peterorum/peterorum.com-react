@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Wrapper = styled.header`
   position: fixed;
   z-index: 100;
-  background: white;
+  background: #f6f6f6;
   width: 100vw;
   display: flex;
   flex-direction: row;
