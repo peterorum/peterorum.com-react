@@ -27,6 +27,7 @@ const CardWrapper = styled.div`
   border-radius: 4px;
   width: 100%;
   margin-bottom: 1rem;
+  background-color: white;
 
   @media (min-width: ${breakpoints.mobile}) {
     width: 30%;
