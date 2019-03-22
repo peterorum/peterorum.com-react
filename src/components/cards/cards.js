@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
 
+import { breakpoints } from 'Components/layout/layout';
+
 // cards
 
 const Wrapper = styled.div`
@@ -23,6 +25,12 @@ Cards.propTypes = {
 const CardWrapper = styled.div`
   border: 1px solid rgb(221, 221, 221);
   border-radius: 4px;
+  width: 100%;
+  margin-bottom: 1rem;
+
+  @media (min-width: ${breakpoints.mobile}) {
+    width: 30%;
+  }
 
   .title {
     padding: 1rem;
