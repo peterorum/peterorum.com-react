@@ -16,7 +16,7 @@ const images = [img1, img2, img3, img4, img5];
 const Wrapper = styled.section`
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
 
   .photo {
     position: absolute;
@@ -55,7 +55,10 @@ const Wrapper = styled.section`
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      padding-top: 4rem;
+
+      @media (min-width: ${breakpoints.mobile}) {
+        padding-top: 4rem;
+      }
     }
 
     a {

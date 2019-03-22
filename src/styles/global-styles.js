@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
+import { breakpoints } from 'Components/layout/layout';
+
 export const GlobalStyle = createGlobalStyle`
 
   body {
@@ -17,6 +19,21 @@ export const GlobalStyle = createGlobalStyle`
 
   h2 {
     font-family: 'Julius Sans One';
-    font-size: 2rem;
+    font-size: 1.5rem;
+
+    @media (min-width: ${breakpoints.mobile}) {
+      font-size: 2rem;
+    }
   }
+
+  .hidden-mobile {
+    display: none;
+  }
+
+  @media (min-width: ${breakpoints.mobile}) {
+    .hidden-mobile {
+      display: block;
+    }
+  }
+
 `;

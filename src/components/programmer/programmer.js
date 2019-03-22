@@ -2,12 +2,16 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import { Container } from 'Components/layout/layout';
+import { Container, breakpoints } from 'Components/layout/layout';
 
 import { Cards, Card } from 'Components/cards/cards';
 
 const Wrapper = styled.section`
   padding-top: 3rem;
+
+  @media (min-width: ${breakpoints.mobile}) {
+    padding-top: 6rem;
+  }
 `;
 
 const cards = [

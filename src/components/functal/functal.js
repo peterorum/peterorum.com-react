@@ -12,7 +12,11 @@ const Wrapper = styled.section`
   background-image: url(${functal});
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 1rem;
+  padding: 2rem;
+
+  svg {
+    min-width: 2rem;
+  }
 `;
 
 const cards = [

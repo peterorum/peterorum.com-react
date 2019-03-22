@@ -2,10 +2,11 @@ import React from 'react';
 
 import styled from 'styled-components';
 
+import { breakpoints } from 'Components/layout/layout';
+
 const Wrapper = styled.header`
-  position: fixed;
   z-index: 100;
-  background: #f6f6f6;
+  background: #000;
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -14,7 +15,7 @@ const Wrapper = styled.header`
   padding: 1rem;
 
   a {
-    color: #666;
+    color: #fff;
   }
 
   .brand {
@@ -28,6 +29,11 @@ const Wrapper = styled.header`
       margin-left: 1rem;
     }
   }
+
+  @media (min-width: ${breakpoints.mobile}) {
+    position: fixed;
+  }
+
 `;
 
 export const Header = () => (
@@ -37,7 +43,7 @@ export const Header = () => (
         Peter Orum
       </a>
     </nav>
-    <nav className="section-links">
+    <nav className="section-links hidden-mobile">
       <a href="#photographer">Photographer</a>
       <a href="#programmer">Programmer</a>
       <a href="#painter">Painter</a>
