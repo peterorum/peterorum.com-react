@@ -55,6 +55,7 @@ const Wrapper = styled.section`
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      padding-top: 4rem;
     }
 
     a {
@@ -95,7 +96,7 @@ export const Photographer = () => {
 
   return (
     <Wrapper>
-      <div className="photo">
+      <div className="photo" id="photographer">
         {images.map((image, index) => (
           <img
             key={image}

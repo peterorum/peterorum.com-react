@@ -3,6 +3,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.header`
+  position: fixed;
+  z-index: 100;
+  background: white;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

@@ -13,9 +13,19 @@ const cards = [
     title: 'Daily Functal',
     content: (
       <div>
-        <p>Digital Fractal Art</p>
+        <p>
+          <strong>Digital Fractal Art</strong>
+        </p>
         <p>Fractal creation</p>
-        <p>Captions form Microsoft Vision API</p>
+        <p>Captions from Microsoft Cognitive Vision API</p>
+        <p>
+          Node server & fractal generation{' '}
+          <a href="https://github.com/peterorum/functal">github</a>
+        </p>
+        <p>
+          Twitter, Facebook & Tumbl bots{' '}
+          <a href="https://github.com/peterorum/functalbook">github</a>
+        </p>
       </div>
     ),
   },
@@ -23,8 +33,39 @@ const cards = [
     title: 'Daily Jzx',
     content: (
       <div>
-        <p>Short, valuable Scrablle words</p>
-        <p>Twitter bot</p>
+        <p>
+          <strong>Short, valuable Scrabble words</strong>
+        </p>
+        <p>Twitter & Facebook bot</p>
+        <p>
+          <a href="https://twitter.com/dailyjzx" target="_blank">
+            @dailyjzx
+          </a>
+        </p>
+        <p>
+          <a href="https://www.facebook.com/pages/Daily-Jzx/848455901888299">
+            facebook
+          </a>
+        </p>
+        <p>
+          Node{' '}
+          <a href="https://github.com/peterorum/random/tree/master/jzx">
+            github
+          </a>
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: 'peterorum.com',
+    content: (
+      <div>
+        <p>
+          <strong>React hooks, styled components</strong>
+        </p>
+        <p>
+          <a href="https://github.com/peterorum/peterorum.com-react">github</a>
+        </p>
       </div>
     ),
   },
@@ -32,18 +73,14 @@ const cards = [
 
 export const Programmer = () => (
   <Wrapper>
-    <div className="content">
+    <div className="content" id="programmer">
       <Container>
         <div>
           <h2>Programmer</h2>
         </div>
         <Cards>
           {cards.map(card => (
-            <Card
-              key={card.title}
-              heading={card.title}
-              content={card.content}
-            />
+            <Card key={card.title} title={card.title} content={card.content} />
           ))}
         </Cards>
       </Container>
