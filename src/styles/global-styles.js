@@ -17,5 +17,6 @@ export const GlobalStyle = createGlobalStyle`
 
   h2 {
     font-family: 'Julius Sans One';
+    font-size: 2rem;
   }
 `;
