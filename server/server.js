@@ -54,13 +54,14 @@
 
   // app.use(express.static('dist'));
 
-  app.get(/\.(js|css|png|jpg|svg)$/, function(req, res) {
+  app.get(/\.(js|css|png|jpg|svg|txt)$/, function(req, res) {
     var uri = url.parse(req.url, true, false);
 
     sendFile(res, uri.pathname);
   });
 
   //------------ html
+
   app.get(/\.(html)$/, function(req, res) {
     var uri = url.parse(req.url, true, false);
 
@@ -68,6 +69,7 @@
   });
 
   //------------- home page
+
   app.get('/', function(req, res) {
     sendFile(res, `${htmlPath}index.html`);
   });
