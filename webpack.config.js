@@ -38,6 +38,7 @@ module.exports = {
       Components: path.resolve(__dirname, 'src/components/'),
       Styles: path.resolve(__dirname, 'src/styles/'),
       Images: path.resolve(__dirname, 'images/'),
+      Config: path.resolve(__dirname, 'src/config/'),
     },
   },
 };

@@ -1,4 +1,6 @@
 import React from 'react';
+import ReactFullpage from '@fullpage/react-fullpage';
+import { config } from 'Config/config';
 
 import 'sanitize.css';
 
@@ -16,11 +18,28 @@ const App = () => (
   <>
     <GlobalStyle />
     <Header />
-    <Photographer />
-    <Programmer />
-    <Functal />
-    <Painter />
-    <Links />
+    <ReactFullpage
+      licenseKey={config.fullPageKey}
+      render={() => (
+        <ReactFullpage.Wrapper>
+          <div className="section">
+            <Photographer />
+          </div>
+          <div className="section">
+            <Programmer />
+          </div>
+          <div className="section">
+            <Functal />
+          </div>
+          <div className="section">
+            <Painter />
+          </div>
+          <div className="section">
+            <Links />
+          </div>
+        </ReactFullpage.Wrapper>
+      )}
+    />
     <Footer />
   </>
 );

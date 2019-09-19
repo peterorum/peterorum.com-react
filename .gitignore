@@ -4,6 +4,8 @@
 
 .DS_Store
 
+src/config/config.js
+
 npm-debug.log*
 
 *.sublime-*
