@@ -22,25 +22,25 @@ const App = () => (
       licenseKey={config.fullPageKey}
       render={() => (
         <ReactFullpage.Wrapper>
-          <div className="section">
+          <div className="section" data-anchor="nav-photographer">
             <Photographer />
           </div>
-          <div className="section">
+          <div className="section bg-gray" data-anchor="nav-programmer">
             <Programmer />
           </div>
-          <div className="section">
+          <div className="section bg-functal" data-anchor="nav-functal">
             <Functal />
           </div>
-          <div className="section">
+          <div className="section" data-anchor="nav-painter">
             <Painter />
           </div>
-          <div className="section">
+          <div className="section bg-black" data-anchor="nav-peter">
             <Links />
+            <Footer />
           </div>
         </ReactFullpage.Wrapper>
       )}
     />
-    <Footer />
   </>
 );
 

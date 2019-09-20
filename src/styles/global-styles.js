@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     color:rgb(51, 51, 51);
+    font-family: Roboto, sans-serif;
   }
 
   a {
@@ -36,4 +37,30 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
+  .bg-gray {
+    background-color: #fff;
+    background-image: url('/images/code.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bg-black {
+    background-color: #000;
+  }
+
+  .bg-functal {
+    background-color: #fff;
+    background-image: url('/images/functal-20161106063441235.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .btn-plain {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    color: white;
+    margin-left: 2rem;
+
+  }
 `;

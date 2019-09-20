@@ -6,12 +6,7 @@ import { Container } from 'Components/layout/layout';
 
 import { Cards, Card } from 'Components/cards/cards';
 
-import functal from 'Images/functal-1.jpg';
-
 const Wrapper = styled.section`
-  background-image: url(${functal});
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 2rem;
 
   svg {

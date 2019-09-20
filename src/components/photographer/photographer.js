@@ -16,7 +16,7 @@ const images = [img1, img2, img3, img4, img5];
 const Wrapper = styled.section`
   position: relative;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
 
   .photo {
     position: absolute;
@@ -49,6 +49,7 @@ const Wrapper = styled.section`
     top: 0;
     left: 0;
     width: 100%;
+    height: 100vh;
     color: ${colors.primary};
 
     & .layout {

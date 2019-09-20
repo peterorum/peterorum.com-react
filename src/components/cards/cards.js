@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 `;
 
 export const Cards = ({ children }) => <Wrapper>{children}</Wrapper>;
@@ -26,7 +26,7 @@ const CardWrapper = styled.div`
   border: 1px solid rgb(221, 221, 221);
   border-radius: 4px;
   width: 100%;
-  margin-bottom: 1rem;
+  margin: 0 1rem 1rem 1rem;
   background-color: white;
 
   @media (min-width: ${breakpoints.mobile}) {

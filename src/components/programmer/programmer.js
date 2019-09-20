@@ -2,15 +2,17 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import { Container, breakpoints } from 'Components/layout/layout';
+import { Container } from 'Components/layout/layout';
 
 import { Cards, Card } from 'Components/cards/cards';
 
 const Wrapper = styled.section`
-  padding-top: 3rem;
 
-  @media (min-width: ${breakpoints.mobile}) {
-    padding-top: 6rem;
+  .programmer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
   }
 `;
 
@@ -81,14 +83,20 @@ export const Programmer = () => (
   <Wrapper id="programmer">
     <div className="content">
       <Container>
-        <div>
-          <h2>Programmer</h2>
+        <div className="programmer">
+          <div>
+            <h2>Programmer</h2>
+          </div>
+          <Cards>
+            {cards.map(card => (
+              <Card
+                key={card.title}
+                title={card.title}
+                content={card.content}
+              />
+            ))}
+          </Cards>
         </div>
-        <Cards>
-          {cards.map(card => (
-            <Card key={card.title} title={card.title} content={card.content} />
-          ))}
-        </Cards>
       </Container>
     </div>
   </Wrapper>

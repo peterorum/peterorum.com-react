@@ -20,7 +20,7 @@ const Wrapper = styled.header`
 
   .brand {
     font-size: 1.2rem;
-    font-family: 'Julius Sans One';
+    font-family: 'Julius Sans One', sans-serif;
     font-weight: bold;
   }
 
@@ -33,7 +33,6 @@ const Wrapper = styled.header`
   @media (min-width: ${breakpoints.mobile}) {
     position: fixed;
   }
-
 `;
 
 export const Header = () => (
@@ -44,10 +43,30 @@ export const Header = () => (
       </a>
     </nav>
     <nav className="section-links hidden-mobile">
-      <a href="#photographer">Photographer</a>
-      <a href="#programmer">Programmer</a>
-      <a href="#painter">Painter</a>
-      <a href="#peter">Peter</a>
+      <button
+        className="btn-plain"
+        onClick={() => window.fullpage_api.moveTo('nav-photographer')}
+      >
+        Photographer
+      </button>
+      <button
+        className="btn-plain"
+        onClick={() => window.fullpage_api.moveTo('nav-programmer')}
+      >
+        Programmer
+      </button>
+      <button
+        className="btn-plain"
+        onClick={() => window.fullpage_api.moveTo('nav-painter')}
+      >
+        Painter
+      </button>
+      <button
+        className="btn-plain"
+        onClick={() => window.fullpage_api.moveTo('nav-peter')}
+      >
+        Peter
+      </button>
     </nav>
   </Wrapper>
 );
