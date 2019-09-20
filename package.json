@@ -4,8 +4,9 @@
   "description": "Personal site using react",
   "main": "index.js",
   "scripts": {
+    "clean-build": "rimraf dist/*",
     "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "build": "npm run clean-build && cross-env NODE_ENV=production webpack --mode production",
     "test": "cross-env NODE_ENV=test npm run lint && jest --coverage",
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
     "lint": "npm run lint:js && npm run lint:css",
