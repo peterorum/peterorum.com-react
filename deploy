@@ -1,3 +1,14 @@
 #!/bin/sh
 
-rsync -crv dist/* server/* misc/* functal:/home/ec2-user/peterorum/
+#rsync -crv dist/* server/* misc/* functal:/home/ec2-user/peterorum/
+
+# --dryrun
+
+#aws s3 cp dist s3://peterorum --recursive --acl public-read --exclude .DS_Store
+#aws s3 cp misc s3://peterorum --recursive --acl public-read --exclude .DS_Store
+
+cp images/code.png dist/images
+cp images/functal-20161106063441235.jpg dist/images
+
+aws s3 sync dist s3://peterorum --acl public-read --exclude .DS_Store
+aws s3 sync misc s3://peterorum --acl public-read --exclude .DS_Store
