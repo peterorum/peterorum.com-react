@@ -9,6 +9,7 @@ import { Photographer } from 'Components/photographer/photographer';
 import { Programmer } from 'Components/programmer/programmer';
 import { Functal } from 'Components/functal/functal';
 import { Painter } from 'Components/painter/painter';
+import { Cartoonist } from 'Components/cartoonist/cartoonist';
 import { Links } from 'Components/links/links';
 import { Footer } from 'Components/footer/footer';
 
@@ -33,6 +34,9 @@ const App = () => (
           </div>
           <div className="section" data-anchor="nav-painter">
             <Painter />
+          </div>
+          <div className="section" data-anchor="nav-cartoonist">
+            <Cartoonist />
           </div>
           <div className="section bg-black" data-anchor="nav-peter">
             <Links />

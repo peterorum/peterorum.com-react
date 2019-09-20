@@ -44,24 +44,28 @@ export const Header = () => (
     </nav>
     <nav className="section-links hidden-mobile">
       <button
+        type="button"
         className="btn-plain"
         onClick={() => window.fullpage_api.moveTo('nav-photographer')}
       >
         Photographer
       </button>
       <button
+        type="button"
         className="btn-plain"
         onClick={() => window.fullpage_api.moveTo('nav-programmer')}
       >
         Programmer
       </button>
       <button
+        type="button"
         className="btn-plain"
         onClick={() => window.fullpage_api.moveTo('nav-painter')}
       >
         Painter
       </button>
       <button
+        type="button"
         className="btn-plain"
         onClick={() => window.fullpage_api.moveTo('nav-peter')}
       >

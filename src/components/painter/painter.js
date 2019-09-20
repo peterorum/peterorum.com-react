@@ -61,7 +61,7 @@ export const Painter = () => (
           <p>
             <a href="https://www.facebook.com/peterorumart/">
               <h3>
-                <i className="fab fa-facebook" /> Facebook Page
+                <i className="fab fa-facebook" /> Facebook
               </h3>
             </a>
           </p>
