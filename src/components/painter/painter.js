@@ -53,16 +53,14 @@ export const Painter = () => (
   <Wrapper id="painter">
     <Container>
       <div className="content">
-        <div className="painting">
+        <div className="painting hidden-mobile">
           <img src={painting} alt="painting" />
         </div>
         <div className="drawing">
           <h2>Painter</h2>
           <p>
-            <a href="https://www.facebook.com/peterorumart/">
-              <h3>
+            <a href="https://www.facebook.com/peterorumart/"  className="large-link">
                 <i className="fab fa-facebook" /> Facebook
-              </h3>
             </a>
           </p>
           <img src={drawing} alt="drawing" />

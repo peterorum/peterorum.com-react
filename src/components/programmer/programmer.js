@@ -2,12 +2,11 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import { Container } from 'Components/layout/layout';
+import { Container, breakpoints } from 'Components/layout/layout';
 
 import { Cards, Card } from 'Components/cards/cards';
 
 const Wrapper = styled.section`
-
   .programmer {
     display: flex;
     flex-direction: column;
@@ -16,7 +15,7 @@ const Wrapper = styled.section`
   }
 `;
 
-const cards = [
+let cards = [
   {
     title: 'Daily Functal',
     content: (
@@ -37,35 +36,45 @@ const cards = [
       </div>
     ),
   },
+];
+
+if (window.matchMedia(`(min-width: ${breakpoints.mobile})`).matches) {
+  cards = [
+    ...cards,
+    {
+      title: 'Daily Jzx',
+      content: (
+        <div>
+          <p>
+            <strong>Short, valuable Scrabble words</strong>
+          </p>
+          <p>Twitter & Facebook bot</p>
+          <p>
+            <a href="https://twitter.com/dailyjzx" target="_blank">
+              @dailyjzx
+            </a>
+          </p>
+          <p>
+            <a href="https://www.facebook.com/pages/Daily-Jzx/848455901888299">
+              facebook
+            </a>
+          </p>
+          <p>
+            Node{' '}
+            <a href="https://github.com/peterorum/random/tree/master/jzx">
+              github
+            </a>
+          </p>
+        </div>
+      ),
+    },
+  ];
+}
+
+cards = [
+  ...cards,
   {
-    title: 'Daily Jzx',
-    content: (
-      <div>
-        <p>
-          <strong>Short, valuable Scrabble words</strong>
-        </p>
-        <p>Twitter & Facebook bot</p>
-        <p>
-          <a href="https://twitter.com/dailyjzx" target="_blank">
-            @dailyjzx
-          </a>
-        </p>
-        <p>
-          <a href="https://www.facebook.com/pages/Daily-Jzx/848455901888299">
-            facebook
-          </a>
-        </p>
-        <p>
-          Node{' '}
-          <a href="https://github.com/peterorum/random/tree/master/jzx">
-            github
-          </a>
-        </p>
-      </div>
-    ),
-  },
-  {
-    title: 'peterorum.com',
+    title: 'www.peterorum.com',
     content: (
       <div>
         <p>

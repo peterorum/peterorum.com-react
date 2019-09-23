@@ -31,6 +31,11 @@ export const GlobalStyle = createGlobalStyle`
     display: none;
   }
 
+  .large-link {
+    font-weight: bold;
+    font-size: 120%;
+  }
+
   @media (min-width: ${breakpoints.mobile}) {
     .hidden-mobile {
       display: block;

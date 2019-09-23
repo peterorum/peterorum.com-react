@@ -53,30 +53,33 @@ export const Cartoonist = () => (
   <Wrapper id="painter">
     <Container>
       <div className="content">
-        <div className="painting">
+        <div className="painting hidden-mobile">
           <img src={cartoon1} alt="cartoon" />
         </div>
         <div className="drawing">
           <h2>Cartoonist</h2>
           <p>
-            <a href="https://www.instagram.com/orumcartoons/">
-              <h3>
-                <i className="fab fa-instagram" /> Instagram
-              </h3>
+            <a
+              href="https://www.instagram.com/orumcartoons/"
+              className="large-link"
+            >
+              <i className="fab fa-instagram" /> Instagram
             </a>
           </p>
           <p>
-            <a href="https://www.facebook.com/orumcartoons/">
-              <h3>
-                <i className="fab fa-facebook" /> Facebook
-              </h3>
+            <a
+              href="https://www.facebook.com/orumcartoons/"
+              className="large-link"
+            >
+              <i className="fab fa-facebook" /> Facebook
             </a>
           </p>
           <p>
-            <a href="https://www.twitter.com/orumcartoons/">
-              <h3>
-                <i className="fab fa-twitter" /> Twitter
-              </h3>
+            <a
+              href="https://www.twitter.com/orumcartoons/"
+              className="large-link"
+            >
+              <i className="fab fa-twitter" /> Twitter
             </a>
           </p>
           <img src={cartoon2} alt="cartoon" />

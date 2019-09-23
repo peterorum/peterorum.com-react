@@ -36,11 +36,8 @@ const CardWrapper = styled.div`
   .title {
     padding: 1rem;
     background-color: rgb(245, 245, 245);
-
-    h3 {
-      padding: 0;
-      margin: 0;
-    }
+    font-weight: bold;
+    font-size: 120%;
   }
 
   .content {
@@ -50,9 +47,7 @@ const CardWrapper = styled.div`
 
 export const Card = ({ title, content }) => (
   <CardWrapper>
-    <div className="title">
-      <h3>{title}</h3>
-    </div>
+    <div className="title">{title}</div>
     <div className="content">{content}</div>
   </CardWrapper>
 );
