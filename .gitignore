@@ -10,3 +10,4 @@ npm-debug.log*
 
 *.sublime-*
 .tern-port
+*.code-workspace
