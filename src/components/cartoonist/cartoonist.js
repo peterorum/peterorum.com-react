@@ -59,6 +59,11 @@ export const Cartoonist = () => (
         <div className="drawing">
           <h2>Cartoonist</h2>
           <p>
+            <a href="https://www.orumcartoons.com" className="large-link">
+              <i className="fas fa-blog" /> Blog
+            </a>
+          </p>
+          <p>
             <a
               href="https://www.instagram.com/orumcartoons/"
               className="large-link"

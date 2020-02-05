@@ -30,7 +30,7 @@ let cards = [
           <a href="https://github.com/peterorum/functal">github</a>
         </p>
         <p>
-          Twitter, Facebook & Tumbl bots{' '}
+          Twitter & Tumbl bots{' '}
           <a href="https://github.com/peterorum/functalbook">github</a>
         </p>
       </div>
@@ -48,15 +48,10 @@ if (window.matchMedia(`(min-width: ${breakpoints.mobile})`).matches) {
           <p>
             <strong>Short, valuable Scrabble words</strong>
           </p>
-          <p>Twitter & Facebook bot</p>
+          <p>Twitter bot</p>
           <p>
             <a href="https://twitter.com/dailyjzx" target="_blank">
               @dailyjzx
-            </a>
-          </p>
-          <p>
-            <a href="https://www.facebook.com/pages/Daily-Jzx/848455901888299">
-              facebook
             </a>
           </p>
           <p>

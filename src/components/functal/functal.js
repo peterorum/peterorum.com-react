@@ -20,11 +20,6 @@ const cards = [
     content: (
       <div>
         <p>
-          <a href="https://www.facebook.com/dailyfunctal">
-            <i className="fab fa-facebook" /> facebook
-          </a>
-        </p>
-        <p>
           <a href="https://twitter.com/dailyfunctal">
             <i className="fab fa-twitter" /> twitter
           </a>

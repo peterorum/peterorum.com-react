@@ -10,4 +10,4 @@ const Wrapper = styled.footer`
   color: ${colors.primary};
 `;
 
-export const Footer = () => <Wrapper>&copy; 2019 Peter Orum</Wrapper>;
+export const Footer = () => <Wrapper>&copy; 2020 Peter Orum</Wrapper>;

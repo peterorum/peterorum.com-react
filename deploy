@@ -7,8 +7,7 @@
 #aws s3 cp dist s3://peterorum --recursive --acl public-read --exclude .DS_Store
 #aws s3 cp misc s3://peterorum --recursive --acl public-read --exclude .DS_Store
 
-# first:
-# npm run build
+npm run build
 
 cp images/code.png dist/images
 cp images/functal-20161106063441235.jpg dist/images
